@@ -1,17 +1,17 @@
+import model.Student;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.MethodSource;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MainAppTest {
 
-    Student student = new Student();
+    Student student = new Student("m", "Mark", 1234343);
 
     @Test
     public void testGetterSetterName(){
-        student.setName("Paul2");
+        //student.setName("Paul2");
        String actual = student.getName();
-       assertEquals("Paul2", actual);
+       assertEquals("Mark", actual);
     }
 
     @Test

@@ -1,3 +1,5 @@
+package model;
+
 public class Student {
 
     // Attributen
@@ -6,6 +8,12 @@ public class Student {
     private int maNummer = 67676;
 
     // Konstruktor
+    public Student(String gender, String name, int maNummer){
+        this.gender=gender;
+        this.name = name;
+        this.maNummer = maNummer;
+    }
+
 
     // Methoden
 
